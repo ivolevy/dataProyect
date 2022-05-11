@@ -1,0 +1,272 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ 
+ body{
+     background-image: url(../img/background.jpeg);
+     background-size: cover;
+}
+
+/** nav **/
+
+.nav{
+    margin: 0 auto;
+    background-color: white;
+    width: 850px;
+    height: 50px;
+}
+
+.linkNoLine:hover{
+    text-decoration: none;
+}
+
+.imgNav{
+    width: 22%;
+    margin-top: 7px;
+    align-items: center;
+}
+
+.buttonsLeft{
+    margin-top: 8px;
+    list-style: none;
+    display: flex;
+    align-items:center;
+}
+.buttonLeft{
+    font-size: 14px;
+    margin-left: 14px;
+    color: black;
+}
+
+/** main **/
+
+.mainSection1{
+    padding: 10px;
+    margin: 0 auto;
+    width: 850px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.589);
+}
+
+.mainSection{
+    padding: 10px;
+    margin: 0 auto;
+    width: 850px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.536);
+}
+
+.profileBios{
+    margin-top: 20px;
+    padding: 10px;
+    width: 90%;
+    height: 140px;
+    display: flex;
+    font-weight: 300;
+}
+
+.imgBios{
+    width: 25%;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.infoProfileBios{
+    padding-left: 10px;
+    margin: 0 auto;
+    margin-top: -8px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.textProfileBios{
+
+}
+
+.nameBios{
+    padding-left: 10px;
+    margin-bottom: -20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media(max-width:424px){
+    body{
+        background-image: url(../img/background.jpeg);
+        background-size:auto;
+        background-repeat: no-repeat;
+    }
+    .nav{
+        margin: 0 auto;
+        background-color: white;
+        width: 100%;
+        height: 50px;
+    }
+    .imgNav{
+        width: 30%;
+        margin-top: 10px;
+        align-items: center;
+    }
+    .mainSection1{
+        padding: 10px;
+        margin: 0 auto;
+        width: 100%;
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0.536);
+    }
+    
+    .mainSection{
+        padding: 10px;
+        margin: 0 auto;
+        width: 100%;
+        height: 540px;
+        background-color: rgba(255, 255, 255, 0.536);
+    } 
+    .profileBios{
+        padding: 10px;
+        width: 90%;
+        height: 140px;
+        display: block;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }  
+    .imgBios{
+        width: 70%;
+        height: 100%;
+        margin-right: 10px;
+    }    
+    .infoProfileBios{
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .nameBios{
+    }
+}
+
+@media(min-width:425px) and (max-width:764px){
+    .nav{
+        margin: 0 auto;
+        background-color: white;
+        width: 95%;
+        height: 50px;
+    }
+    .imgNav{
+        width: 23%;
+        margin-top: 8px;
+        align-items: center;
+    }
+    .mainSection1{
+        width: 95%;
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0.536);
+    }
+    .mainSection{
+        padding: 10px;
+        margin: 0 auto;
+        width: 95%;
+        height: 400px;
+        background-color: rgba(255, 255, 255, 0.536);
+    }
+    
+    .profileBios{
+        margin-top: 20px;
+        padding: 10px;
+        width: 90%;
+        height: 140px;
+        display: flex;
+        text-transform: uppercase;
+    }
+    
+    .imgBios{
+        width: 40%;
+        height: 100%;
+        margin-right: 10px;
+    }
+    
+    .infoProfileBios{
+        padding: 10px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: 1024px){
+    .nav{
+        margin: 0 auto;
+        background-color: white;
+        width: 80%;
+        height: 80px;
+    }
+    
+    .linkNoLine:hover{
+        text-decoration: none;
+    }
+    
+    .imgNav{
+        width: 22%;
+        margin-top: 22px;
+        align-items: center;
+    }
+    
+    .buttonsLeft{
+        margin-top: 8px;
+        list-style: none;
+        display: flex;
+        align-items:center;
+    }
+    .buttonLeft{
+        font-size: 14px;
+        margin-left: 14px;
+        color: black;
+    }
+    
+    /** main **/
+    
+    .mainSection1{
+        padding: 10px;
+        margin: 0 auto;
+        width: 80%;
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0.536);
+    }
+    
+    .mainSection{
+        padding: 10px;
+        margin: 0 auto;
+        width: 80%;
+        height: 400px;
+        background-color: rgba(255, 255, 255, 0.536);
+    }
+    
+    .profileBios{
+        margin-top: 20px;
+        padding: 10px;
+        width: 85%;
+        height: 220px;
+        display: flex;
+        text-transform: uppercase;
+    }
+    
+    .imgBios{
+        width: 25%;
+        height: 100%;
+        margin-right: 10px;
+    }
+    
+    .infoProfileBios{
+        padding: 10px;
+    }
+
+    .infoBios{
+        margin-left: 10px;
+        font-weight: 500;
+    }
+
+    .nameBios{
+        font-size: 20px;
+        margin-top: -16px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}

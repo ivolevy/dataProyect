@@ -1,0 +1,57 @@
+.nav{
+    margin: 0 auto;
+    background-color: white;
+    margin-bottom: 10px;
+    width: 850px;
+    height: 50px;
+}
+
+.transparentDiv{
+    width: 80%;
+    height: 7px;
+    background-color: transparent;
+}
+
+.linkNoLine:hover{
+    text-decoration: none;
+}
+
+.imgNav{
+    width: 22%;
+    margin-top: 9px;
+    align-items: center;
+}
+
+@media(max-width: 560px){
+    .transparentDiv{
+        display: none;
+    }
+    .linkNoLine:hover{
+        text-decoration: none;
+    }
+    
+    .imgNav{ 
+        width: 19%;
+        margin-top: 10px;
+        align-items: center;
+    }    
+}
+
+@media(min-width: 1024px){
+    .nav{
+        width: 85%;
+        height: 80px;
+        margin: 0 auto;
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .linkNoLine:hover{
+        text-decoration: none;
+    }
+    
+    .imgNav{
+        width: 22%;
+        margin-top: 21px;
+    }   
+}
