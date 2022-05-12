@@ -8,15 +8,44 @@
     <link rel="stylesheet" href="../../public/css/bios.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>perfil</title>
+    <script>
+
+
+        function cambiar() {
+            document.getElementById('nav').style.backgroundColor="#333333";
+            document.getElementById('mainSection').style.backgroundColor="rgba(0, 0, 0, 0.536)";
+            document.getElementById('imgNav').src='../../public/img/whiteLogoNav.png';
+            document.getElementById('nameMain').style.color= 'white';
+            document.getElementById('nameMain2').style.color= 'white';
+            document.getElementById('imgProfileMain').style.border = '1px solid white';
+            document.getElementById('imgProfileMain2').style.border = '1px solid white';
+            document.getElementById('body').style.backgroundImage="url(../../public/img/darkWpp.jpeg)"; 
+        }
+        function reset(){
+            document.getElementById('nav').style.backgroundColor="";
+            document.getElementById('mainSection').style.backgroundColor="";
+            document.getElementById('imgNav').src="../../public/img/logoNav.png";
+            document.getElementById('nameMain').style.color="";
+            document.getElementById('nameMain2').style.color="";
+            document.getElementById('imgProfileMain').style.border="";
+            document.getElementById('imgProfileMain2').style.border="";
+            document.getElementById('body').style.backgroundImage="";
+        }
+
+    </script>
 </head>
 <body>
     <section class="mainSection1">
     </section>
 
-    <nav class="nav">
+    <nav class="nav" id="nav">
         <!--<a href="index.html" class="linkNoLine"><h1 class="titleNav">Prode Qatar 2022</h1></a>-->
         <a href="index.html" class="linkNoLine"><img src="../../public/img/logoNav.png" alt="" class="imgNav"></a>
 
+        <div class="themesBtn">
+            <button onclick="cambiar();" class="darkModeBtn" >Dark mode</button>
+            <button onClick="reset();" class="darkModeBtn" id="ligth">Ligth mode</button>
+        </div>
        <!--<ul class="buttonsLeft">
             <li><a href="index.html" class="buttonLeft">Inicio</a></li>
             <li><a href="fixture.html" class="buttonLeft">Fixture</a></li>
@@ -25,7 +54,7 @@
 
     </nav>
 
-    <section class="mainSection">
+    <section class="mainSection" id="">
 
         <div class="profileBios">
             <img src="../../public/img/uadefondo.jpg" alt="" class="imgBios">

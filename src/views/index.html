@@ -11,12 +11,43 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <title>UADE</title>
+
+    <script>
+
+
+        function cambiar() {
+            document.getElementById('nav').style.backgroundColor="#333333";
+            document.getElementById('mainSection').style.backgroundColor="rgba(0, 0, 0, 0.536)";
+            document.getElementById('imgNav').src='../../public/img/whiteLogoNav.png';
+            document.getElementById('nameMain').style.color= 'white';
+            document.getElementById('nameMain2').style.color= 'white';
+            document.getElementById('imgProfileMain').style.border = '1px solid white';
+            document.getElementById('imgProfileMain2').style.border = '1px solid white';
+            document.getElementById('body').style.backgroundImage="url(../../public/img/darkWpp.jpeg)"; 
+        }
+        function reset(){
+            document.getElementById('nav').style.backgroundColor="";
+            document.getElementById('mainSection').style.backgroundColor="";
+            document.getElementById('imgNav').src="../../public/img/logoNav.png";
+            document.getElementById('nameMain').style.color="";
+            document.getElementById('nameMain2').style.color="";
+            document.getElementById('imgProfileMain').style.border="";
+            document.getElementById('imgProfileMain2').style.border="";
+            document.getElementById('body').style.backgroundImage="";
+        }
+
+    </script>
 </head>
-<body>
+<body id="body">
     <div class="transparentDiv"></div>
-    <nav class="nav">
+    <nav class="nav" id="nav">
         <!--<a href="index.html" class="linkNoLine"><h1 class="titleNav">Prode Qatar 2022</h1></a>-->
-            <a href="index.html" class="linkNoLine"><img src="../../public/img/logoNav.png" alt="" class="imgNav"></a>
+            <a href="index.html" class="linkNoLine"><img src="../../public/img/logoNav.png" alt="" class="imgNav" id="imgNav"></a>
+
+            <div class="themesBtn">
+                <button onclick="cambiar();" class="darkModeBtn" >Dark mode</button>
+                <button onClick="reset();" class="darkModeBtn" id="ligth">Ligth mode</button>
+            </div>
        <!--<ul class="buttonsLeft">
             <li><a href="index.html" class="buttonLeft">Inicio</a></li>
             <li><a href="fixture.html" class="buttonLeft">Fixture</a></li>
@@ -25,9 +56,7 @@
 
     </nav>
 
-    <section class="mainSection">
-
-        <button id="btn" class="darkModeBtn">Button</button>
+    <section class="mainSection" id="mainSection">
 
         <article class="imgArticle">
             <div class="imagenes">
@@ -35,7 +64,7 @@
                     <img src="../../public/img/imgindex1.jfif" alt="" class="imagdiv1">
                 </div>
                 <div class="div1">
-                    <img src="../../public/img/imgindex2.jfif" alt="" class="imagdiv1">
+                    <img src="../../public/img/investUade.jpeg" alt="" class="imagdiv1">
                 </div>
                 <div class="div1">
                     <img src="../../public/img/imgindex3.jfif" alt="" class="imagdiv1">
@@ -46,9 +75,9 @@
         <article class="profileArticle">
 
             <div class="profile">
-                <img src="../../public/img/images.jpeg" alt="" class="imgProfileMain">
+                <img src="../../public/img/images.jpeg" alt="" class="imgProfileMain" id="imgProfileMain">
                 <div class="infoProfileMain">
-                    <p class="nameMain">nombre apellido</p>
+                    <p class="nameMain" id="nameMain">nombre apellido</p>
                     <form method="get" action="./bios.html">
                         <button type="submit" class="linkProfileMain">Perfil</button>
                     </form>
@@ -56,9 +85,9 @@
             </div>
 
             <div class="profile">
-                <img src="../../public/img/images.jpeg" alt="" class="imgProfileMain">
+                <img src="../../public/img/images.jpeg" alt="" class="imgProfileMain" id="imgProfileMain2">
                 <div class="infoProfileMain">
-                    <p class="nameMain">nombre apellido</p>
+                    <p class="nameMain" id="nameMain2">nombre apellido</p>
                     <form method="get" action="./bios2.html">
                         <button type="submit" class="linkProfileMain">Perfil</button>
                     </form>

@@ -92,6 +92,29 @@
     margin-bottom: 30px;
 }
 
+.themesBtn{
+    margin: 0 auto;
+    margin-left: 200px;
+    padding: 11px;
+}
+
+.darkModeBtn {
+    font-size: 12px;
+  background-color: #222;
+  border-radius: 3px;
+  border-style: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  border: 1px solid transparent;
+}
+
+.darkModeBtn:hover,
+.darkModeBtn:focus {
+  opacity: .75;
+  border: 1px solid white;
+}
+
 @media(max-width:424px){
     body{
         background-image: url(../img/background.jpeg);
